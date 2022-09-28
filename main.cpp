@@ -4,8 +4,16 @@
 
 int main() {
     std::system("cls");
-    std::cout << "Bienvenidos al juego Tres en Raya\nUCSP-Ciencia de la Computacion 2-1";
-    std::cout << "Nombres.\n Gonzalo Sumina\n Juan Palo\n";
+    std::string fila_="\033[33m----------------------------------------------\033[m";
+    std::string columna_="\033[33m | \033[m";
+    std::cout << fila_ << std::endl;
+    std::cout << columna_ << "Universidad Catolica San Pablo          " << columna_ << std::endl;
+    std::cout << columna_ << "Curso de Ciencia de la Computacion 1    " << columna_ << std::endl;
+    std::cout << columna_ << "Docente: Manuel Eduardo Loaiza Fernandez" << columna_<< std::endl;
+    std::cout << columna_ << "Creado por:                             " << columna_<< std::endl;
+    std::cout << columna_ << "- Gonzalo Sumina Quispe                 " << columna_<< std::endl;
+    std::cout << columna_ << "- Juan Palo Alejandro                   " << columna_<< std::endl;
+    std::cout << fila_ << std::endl;
     char a='1', b='2', c='3', d='4', e='5', f='6', g='7', h='8', i='9';
     int a_=0, b_=0, c_=0, d_=0, e_=0, f_=0, g_=0, h_=0, i_=0;
     //bool 
@@ -167,121 +175,7 @@ int main() {
   	    columna3=c_+f_+i_;
   	    diagonal1=a_+e_+i_;
   	    diagonal2=c_+e_+g_;
-  	    if (fila1==2 || fila2==2 || fila3==2 || columna1==2 || columna2==2 || columna3==2 || diagonal1==2 || diagonal2==2){
-  	    	if (fila1==2){
-  	    		if (a_==0){
-  	    			a=ficha2;
-              a_=3;
-  	    		}
-  	    		else if (b_==0){
-  	    			b=ficha2;
-              b_=3;
-  	    		}
-      			else if (c_==0){
-      				c=ficha2;
-              c_=3;
-      			}
-      		}
-          else if (fila2==2){
-            if (d_==0){
-              d=ficha2;
-              d_=3;
-            }
-            else if (e_==0){
-              e=ficha2;
-              e_=3;
-            }
-            else if (f_==0){
-              f=ficha2;
-              f_=3;
-            }
-          }
-          else if (fila3==2){
-            if (g_==0){
-              g=ficha2;
-              g_=3;
-            }
-            else if (h_==0){
-              h=ficha2;
-              h_=3;
-            }
-            else if (i_==0){
-              i=ficha2;
-              i_=3;
-            }
-          }
-          else if (columna1==2){
-            if (a_==0){
-              a=ficha2;
-              a_=3;
-            }
-            else if (d_==0){
-              d=ficha2;
-              d_=3;
-            }
-            else if (g_==0){
-              g=ficha2;
-              g_=3;
-            }
-          }
-          else if (columna2==2){
-            if (b_==0){
-              b=ficha2;
-              b_=3;
-            }
-            else if (e_==0){
-              e=ficha2;
-              e_=3;
-            }
-            else if (h_==0){
-              h=ficha2;
-              h_=3;
-            }
-          }
-          else if (columna3==2){
-            if (c_==0){
-              c=ficha2;
-              c_=3;
-            }
-            else if (f_==0){
-              f=ficha2;
-              f_=3;
-            }
-            else if (i_==0){
-              i=ficha2;
-              i_=3;
-            }
-          }
-          else if (diagonal1==2){
-            if (a_==0){
-              a=ficha2;
-              a_=3;
-            }
-            else if (e_==0){
-              e=ficha2;
-              e_=3;
-            }
-            else if (i_==0){
-              i=ficha2;
-              i_=3;
-            }
-          }
-          else if (diagonal2==2){
-            if (c_==0){
-              c=ficha2;
-              c_=3;
-            }
-            else if (e_==0){
-              e=ficha2;
-              e_=3;
-            }
-            else if (g_==0){
-              g=ficha2;
-              g_=3;
-            }
-          }
-      	}
-        else if(fila1==6 || fila2==6 || fila3==6 || columna1==6 || columna2==6 || columna3==6 || diagonal1==6 || diagonal2==6){
+        if(fila1==6 || fila2==6 || fila3==6 || columna1==6 || columna2==6 || columna3==6 || diagonal1==6 || diagonal2==6){
           if (fila1==6){
             if (a_==0){
               a=ficha2;
@@ -395,8 +289,127 @@ int main() {
             }
           }
         }
+  	    else if (fila1==2 || fila2==2 || fila3==2 || columna1==2 || columna2==2 || columna3==2 || diagonal1==2 || diagonal2==2){
+  	    	if (fila1==2){
+  	    		if (a_==0){
+  	    			a=ficha2;
+              a_=3;
+  	    		}
+  	    		else if (b_==0){
+  	    			b=ficha2;
+              b_=3;
+  	    		}
+      			else if (c_==0){
+      				c=ficha2;
+              c_=3;
+      			}
+      		}
+          else if (fila2==2){
+            if (d_==0){
+              d=ficha2;
+              d_=3;
+            }
+            else if (e_==0){
+              e=ficha2;
+              e_=3;
+            }
+            else if (f_==0){
+              f=ficha2;
+              f_=3;
+            }
+          }
+          else if (fila3==2){
+            if (g_==0){
+              g=ficha2;
+              g_=3;
+            }
+            else if (h_==0){
+              h=ficha2;
+              h_=3;
+            }
+            else if (i_==0){
+              i=ficha2;
+              i_=3;
+            }
+          }
+          else if (columna1==2){
+            if (a_==0){
+              a=ficha2;
+              a_=3;
+            }
+            else if (d_==0){
+              d=ficha2;
+              d_=3;
+            }
+            else if (g_==0){
+              g=ficha2;
+              g_=3;
+            }
+          }
+          else if (columna2==2){
+            if (b_==0){
+              b=ficha2;
+              b_=3;
+            }
+            else if (e_==0){
+              e=ficha2;
+              e_=3;
+            }
+            else if (h_==0){
+              h=ficha2;
+              h_=3;
+            }
+          }
+          else if (columna3==2){
+            if (c_==0){
+              c=ficha2;
+              c_=3;
+            }
+            else if (f_==0){
+              f=ficha2;
+              f_=3;
+            }
+            else if (i_==0){
+              i=ficha2;
+              i_=3;
+            }
+          }
+          else if (diagonal1==2){
+            if (a_==0){
+              a=ficha2;
+              a_=3;
+            }
+            else if (e_==0){
+              e=ficha2;
+              e_=3;
+            }
+            else if (i_==0){
+              i=ficha2;
+              i_=3;
+            }
+          }
+          else if (diagonal2==2){
+            if (c_==0){
+              c=ficha2;
+              c_=3;
+            }
+            else if (e_==0){
+              e=ficha2;
+              e_=3;
+            }
+            else if (g_==0){
+              g=ficha2;
+              g_=3;
+            }
+          }
+      	}
         else{
-	      	variable2=char(rand()%9+1);
+          for (int i=1; i<=9; ++i){
+            variable2=std::rand()%9+1;
+            if (((variable2)%2==true) && (variable2!=5)){;
+            break;
+            }
+          }
 	        switch(variable2)
 	        {
 	          case 1:
